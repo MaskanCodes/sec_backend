@@ -1,0 +1,156 @@
+getDoctorprofile:
+    handler: doctor/handler.getDoctorprofile
+    events:
+        - httpApi:
+              path: /sec/doctorprofile
+              method: GET  
+
+getDoctordetails:
+    handler: doctor/handler.getDoctordetails
+    events:
+        - httpApi:
+              path: /sec/doctordetails
+              method: GET  
+
+getDoctordetailscomplete:
+    handler: doctor/handler.getDoctordetailscomplete
+    events:
+        - httpApi:
+              path: /sec/doctordetailscomplete
+              method: GET  
+
+getDoctordetailscompleteall:
+    handler: doctor/handler.getDoctordetailscompleteall
+    events:
+        - httpApi:
+              path: /sec/getDoctordetailscompleteall
+              method: GET  
+
+getcompleteDoctorsDetailsId:
+    handler: doctor/handler.getcompleteDoctorsDetailsId
+    events:
+        - httpApi:
+              path: /sec/getDoctordetailscompleteall/{id}
+              method: GET  
+                       
+updateDoctorProfile:
+    handler: doctor/handler.updateDoctorProfile
+    events:
+        - httpApi:
+              path: /sec/updateDoctorProfile
+              method: POST
+
+
+
+# ----
+
+
+
+# getAppointmentbystatusid:
+#     handler: doctor/handler.getAppointmentbystatusid
+#     events:
+#         - httpApi:
+#               path: /sec/doctor/getAppointmentbystatusid/{status}/{id}
+#               method: GET 
+
+# getDocDetailscomplete:
+#     handler: doctor/handler.getDocDetailscomplete
+#     events:
+#         - httpApi:
+#               path: /sec/getDocDetailscomplete
+#               method: GET  
+
+
+# ------              
+
+
+
+getDocDashoardApp:
+    handler: doctor/handler.getDocDashoardApp
+    events:
+        - httpApi:
+              path: /sec/Doctor/DocDashoardApp/{id}
+              method: GET 
+
+getDocDashoardAppstatus:
+    handler: doctor/handler.getDocDashoardAppstatus
+    events:
+        - httpApi:
+              path: /sec/Doctor/DocDashoardApp/{status}/{id}
+              method: GET 
+
+getDocNotification:
+
+    handler: doctor/handler.getDocNotification
+    events:
+        - httpApi:
+              path: /sec/Doctor/DocNotification/{id}
+              method: GET 
+
+getDoctorsDetailsbyId:
+    handler: doctor/handler.getDoctorsDetailsbyId
+    events: 
+        - httpApi:
+              path: /sec/DoctorsDetailsbyId/{id}
+              method: GET  
+
+getdocAppointmentdetailsId:
+    handler: doctor/handler.getdocAppointmentdetailsId
+    events:
+        - httpApi:
+              path: /sec/doctor/AppointmentdetailsId/{id}
+              method: GET  
+
+getdocAppointmentbystatusId:
+    handler: doctor/handler.getdocAppointmentbystatusId
+    events:
+        - httpApi:
+              path: /sec/doctor/AppointmentbystatusId/{status}/{id}
+              method: GET 
+
+UpdatedocAppbystatusId:
+    handler: doctor/handler.UpdatedocAppbystatusId
+    events:
+        - httpApi:
+              path: /sec/doctor/UpdatedocAppbystatusId
+              method: POST 
+
+updateDoctorDetails:
+    handler: doctor/handler.updateDoctorDetails
+    events:
+        - httpApi:
+              path: /sec/updateDoctorDetails
+              method: POST  
+ 
+create_doc_listing:
+    handler: doctor/handler.create_doc_listing
+    events:
+        - httpApi:
+              path: /sec/createdoctorlisting
+              method: POST  
+
+# update_doc_listing:
+#     handler: doctor/handler.update_doc_listing
+#     events:
+#         - httpApi:
+#               path: /sec/updatedoclisting
+#               method: POST  
+
+
+getDocAppointmentHistoryId:
+    handler: doctor/handler.getDocAppointmentHistoryId
+    events:
+        - httpApi:
+              path: /sec/doctor/DocAppointmentHistoryId/{id}
+              method: GET  
+
+
+
+getDocTransaction:
+    handler: doctor/handler.getDocTransaction
+    events:
+        - httpApi:
+              path: /sec/doctor/DocTransaction/{id}
+              method: GET 
+
+

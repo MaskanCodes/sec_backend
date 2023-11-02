@@ -1,0 +1,127 @@
+getPatientprofile:
+    handler: patient/handler.getPatientprofile
+    events:
+        - httpApi:
+              path: /sec/patientprofile
+              method: GET  
+                       
+updatePateintProfile:
+    handler: patient/handler.updatePateintProfile
+    events:
+        - httpApi:
+              path: /sec/updatePateintProfile
+              method: POST
+
+getAppointment:
+    handler: patient/handler.getAppointment
+    events:
+        - httpApi:
+              path: /sec/getAppointment
+              method: GET  
+                       
+createAppointment:
+    handler: patient/handler.createAppointment
+    events:
+        - httpApi:
+              path: /sec/createAppointment
+              method: POST
+
+getpatientAppointmentbystatus:
+    handler: patient/handler.getpatientAppointmentbystatus
+    events:
+        - httpApi:
+              path: /sec/patientappointmentbystatus/{status}/{id}
+              method: GET
+
+
+
+
+
+
+
+            #   ----------
+
+
+
+
+getpatientAppbystatusid:
+    handler: patient/handler.getpatientAppbystatusid
+    events:
+        - httpApi:
+              path: /sec/patient/Appointmentbystatusid/{status}/{id}
+              method: GET  
+
+
+
+getDashboardDoctordetails:
+    handler: patient/handler.getDashboardDoctordetails
+    events:
+        - httpApi:
+              path: /sec/patient/DashboardDoctordetails
+              method: GET 
+
+
+
+getDashboardDoctordetailsbyId:
+    handler: patient/handler.getDashboardDoctordetailsbyId
+    events:
+        - httpApi:
+              path: /sec/patient/DashboardDoctordetailsbyId/{id}
+              method: GET 
+
+
+getDashboardHcfdetails:
+    handler: patient/handler.getDashboardHcfdetails
+    events:
+        - httpApi:
+              path: /sec/patient/DashboardHcfdetails
+              method: GET 
+
+
+
+getDashboardHcfdetailsbyId:
+    handler: patient/handler.getDashboardHcfdetailsbyId
+    events:
+        - httpApi:
+              path: /sec/patient/DashboardHcfdetailsbyId/{id}
+              method: GET 
+
+
+getpatientActivity:
+
+    handler: patient/handler.getpatientActivity
+    events:
+        - httpApi:
+              path: /sec/patient/patientActivity/{id}
+              method: GET 
+
+
+getpatientNotification:
+
+    handler: patient/handler.getpatientNotification
+    events:
+        - httpApi:
+              path: /sec/patient/patientNotification/{id}
+              method: GET 
+
+
+getappointmentHistory:
+    handler: patient/handler.getappointmentHistory
+    events:
+        - httpApi:
+              path: /sec/patient/appointmentHistory/{id}
+              method: GET  
+
+getTransaction:
+    handler: patient/handler.getTransaction
+    events:
+        - httpApi:
+              path: /sec/patient/Transaction/{id}
+              method: GET  
+
+getPatientPlan:
+    handler: patient/handler.getPatientPlan
+    events:
+        - httpApi:
+              path: /sec/patient/PatientPlan/{id}
+              method: GET  

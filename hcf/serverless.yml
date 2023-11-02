@@ -1,0 +1,77 @@
+getDoctorprofile:
+    handler: doctor/handler.getDoctorprofile
+    events:
+        - httpApi:
+              path: /sec/doctorprofile
+              method: GET  
+
+getDoctordetails:
+    handler: doctor/handler.getDoctordetails
+    events:
+        - httpApi:
+              path: /sec/doctordetails
+              method: GET  
+
+getDoctordetailscomplete:
+    handler: doctor/handler.getDoctordetailscomplete
+    events:
+        - httpApi:
+              path: /sec/doctordetailscomplete
+              method: GET  
+
+getDoctordetailscompleteall:
+    handler: doctor/handler.getDoctordetailscompleteall
+    events:
+        - httpApi:
+              path: /sec/getDoctordetailscompleteall
+              method: GET  
+
+getcompleteDoctorsDetailsId:
+    handler: doctor/handler.getcompleteDoctorsDetailsId
+    events:
+        - httpApi:
+              path: /sec/getDoctordetailscompleteall/{id}
+              method: GET  
+                       
+updateDoctorProfile:
+    handler: doctor/handler.updateDoctorProfile
+    events:
+        - httpApi:
+              path: /sec/updateDoctorProfile
+              method: POST
+
+updateDoctorDetails:
+    handler: doctor/handler.updateDoctorDetails
+    events:
+        - httpApi:
+              path: /sec/updateDoctorDetails
+              method: POST  
+
+
+getAppointmentdetails:
+    handler: doctor/handler.getAppointmentdetails
+    events:
+        - httpApi:
+              path: /sec/getAppointmentdetails
+              method: GET  
+
+
+
+getDocDetailscomplete:
+    handler: doctor/handler.getDocDetailscomplete
+    events:
+        - httpApi:
+              path: /sec/getDocDetailscomplete
+              method: GET  
+
+
+
+              
+getDoctorsDetailsId:
+    handler: doctor/handler.getDoctorsDetailsId
+    events: 
+        - httpApi:
+              path: /sec/getDoctorsDetailsId/{id}
+              method: GET  
+
+ 

@@ -1,0 +1,6 @@
+notification_test:
+    handler: notifications-service/handler.test
+    events:
+        - httpApi:
+              path: /sec/notification/test
+              method: GET

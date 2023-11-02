@@ -1,0 +1,8 @@
+module_test:
+    handler: modules-service/handler.test
+    events:
+        - httpApi:
+              path: /sec/modules/test
+              method: GET
+              authorizer:
+                  name: customAuthorizer

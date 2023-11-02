@@ -1,0 +1,44 @@
+customAuthorizer:
+    handler: helpers/authorizer.handler
+
+getCountryCodes:
+    handler: common-service/handler.getCountryCodes
+    events:
+        - httpApi:
+              path: /sec/countries/codes
+              method: GET
+
+getCountries:
+    handler: common-service/handler.getCountries
+    events:
+        - httpApi:
+              path: /sec/countries
+              method: GET
+
+getStates:
+    handler: common-service/handler.getStates
+    events:
+        - httpApi:
+              path: /sec/states
+              method: GET
+
+getCities:
+    handler: common-service/handler.getCities
+    events:
+        - httpApi:
+              path: /sec/cities
+              method: GET
+
+getRoles:
+    handler: common-service/handler.getRoles
+    events:
+        - httpApi:
+              path: /sec/roles
+              method: GET
+
+getDepartments:
+    handler: common-service/handler.getDepartments
+    events:
+        - httpApi:
+              path: /sec/departments
+              method: GET

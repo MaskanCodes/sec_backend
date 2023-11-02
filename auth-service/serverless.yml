@@ -1,0 +1,60 @@
+register_user:
+    handler: auth-service/handler.registerUser
+    environment:
+        LD_LIBRARY_PATH: /var/task/node_modules/canvas/build/Release
+        LD_PRELOAD: /var/task/node_modules/canvas/build/Release/libz.so.1
+    events:
+        - httpApi:
+              path: /sec/auth/register
+              method: POST
+
+verify_user_email:
+    handler: auth-service/handler.verifyUserEmail
+    events:
+        - httpApi:
+              path: /sec/auth/verifyEmail
+              method: POST
+
+authenticate_user:
+    handler: auth-service/handler.authenticateUser
+    events:
+        - httpApi:
+              path: /sec/auth/login
+              method: POST
+
+update_profile:
+    handler: auth-service/handler.updateProfile
+    events:
+        - httpApi:
+              path: /sec/auth/updateProfile
+              method: POST
+
+verify_user_top:
+    handler: auth-service/handler.verifyUserOtp
+    events:
+        - httpApi:
+              path: /sec/auth/verifyOtp
+              method: POST
+
+resend_code:
+    handler: auth-service/handler.resendCode
+    events:
+        - httpApi:
+              path: /sec/auth/resendCode
+              method: POST
+
+forgot_password:
+    handler: auth-service/handler.forgotPassword
+    events:
+        - httpApi:
+              path: /sec/auth/forgotPassword
+              method: POST
+
+change_password:
+    handler: auth-service/handler.changePassword
+    events:
+        - httpApi:
+              path: /sec/auth/changePassword
+              method: POST
+
+
